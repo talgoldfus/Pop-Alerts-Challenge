@@ -1,8 +1,8 @@
 import { combineReducers } from 'redux'
-import alertBoard from './alertBoard.js'
+import alerts from './alertReducer.js'
 
 const rootReducer = combineReducers({
-  alertBoard: alertBoard
+  alerts: alerts
 })
 
 export default rootReducer

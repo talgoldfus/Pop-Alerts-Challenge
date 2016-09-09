@@ -7,7 +7,7 @@ import { Router,browserHistory } from 'react-router'
 import Routes from './routes'
 
 
-let store = createStore(reducer, {}, 
+let store = createStore(reducer, {alerts:["Jay Z" , "Macklemore" ,"Kanye West"]}, 
   window.devToolsExtension && window.devToolsExtension()
 );
 

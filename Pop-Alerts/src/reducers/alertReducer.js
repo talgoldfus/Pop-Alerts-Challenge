@@ -1,4 +1,4 @@
-const alertBoardReducer = (state = [], action) => {
+const alertReducer = (state = {}, action) => {
   switch (action.type) {
     case 'GET_ALERTS':
      return []
@@ -7,4 +7,4 @@ const alertBoardReducer = (state = [], action) => {
   }
 }
 
-export default alertBoardReducer
+export default alertReducer

@@ -1,17 +1,18 @@
-import React, { Component } from 'react'
+import React from 'react';
+import NavBar from './NavBar'
+import SearchBar from './SearchBar'
+import AlertsTable from './AlertsTable'
+
 import '../index.css'
 
-
-
-class App extends Component {
-  render() {
+const App = ()=>{
     return (
       <div className="main">
-          <h2>Hello World</h2>
+          <NavBar />
+          <SearchBar />
+          <AlertsTable />
       </div>
     )
-  }
-
 }
 
 
