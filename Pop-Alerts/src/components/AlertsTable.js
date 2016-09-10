@@ -13,5 +13,4 @@ const AlertsTable = ()=>{
     )
 }
 
-
 export default AlertsTable

@@ -31,6 +31,8 @@ body {
 
 .mainAlertContainer{
   margin-top: 2em;
+  margin-bottom: 2em;
+
   border: solid 1px #E1E1E1;
   background-color: white;
   display: inline-block;

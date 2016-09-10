@@ -1,6 +1,6 @@
 import React from 'react';
 import NavBar from './NavBar'
-import SearchBar from './SearchBar'
+import SearchBar from '../containers/SearchBarContainer'
 import AlertsTable from './AlertsTable'
 
 import '../index.css'
@@ -17,6 +17,5 @@ const App = ()=>{
 
     )
 }
-
 
 export default App

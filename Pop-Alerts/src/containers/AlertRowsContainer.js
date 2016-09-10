@@ -1,12 +1,12 @@
 import React,{ Component } from 'react';
 import { connect } from 'react-redux'
-import Alert from '../components/Alert'
+import AlertContainer from './AlertContainer'
 
 class AlertRows extends Component {
 
     render(){
       const alerts = this.props.alerts.map((alert)=>{
-        return <Alert name={alert.name} key={alert.name} id={alert.id}/>
+        return <AlertContainer name={alert.name} key={alert.name} id={alert.id}/>
       })
 
     return (
@@ -17,26 +17,24 @@ class AlertRows extends Component {
   }
 }
 
-const getAlerts = (alerts, filter) => {
+const getAlerts = (alerts, filter,searchResult) => {
   switch (filter) {
     case 'SHOW_POPULAR_ALERTS':
       return alerts.filter(a => a.popularAlerts)
     case 'SHOW_YOUR_ALERTS':
       return alerts.filter(a => a.yourAlerts)
-
+    case 'SEARCH':
+      return alerts.filter(a => a.name.toLowerCase().includes(searchResult.toLowerCase()))
     default:
         return alerts.filter(a => a.yourAlerts)
   }
 }
 
 const mapStateToProps = (state) => {
-  debugger
   return {
-    alerts: getAlerts(state.alerts, state.filter)
+    alerts: getAlerts(state.alerts, state.filter.filter , state.filter.searchResult )
   }
 }
 
-
 const AlertRowsContainer = connect(mapStateToProps, null)(AlertRows)
-
 export default AlertRowsContainer

@@ -1,7 +1,6 @@
 import React,{ Component }from 'react';
 import { connect } from 'react-redux'
-import changeFilterAction from '../actions/changeFilterAction'
-
+import changeFilter from '../actions/changeFilter'
 
 class AlertSelector extends Component {
   constructor(props){
@@ -26,8 +25,5 @@ class AlertSelector extends Component {
   }
 }
 
-
-
-const AlertSelectorContainer = connect(null,{changeFilter: changeFilterAction})(AlertSelector)
-
+const AlertSelectorContainer = connect(null,{changeFilter})(AlertSelector)
 export default AlertSelectorContainer
