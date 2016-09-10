@@ -9,11 +9,13 @@ class SearchBar extends Component {
 
     render(){
     return (
-      <div className="searchBar">
-        <form onSubmit={this.click.bind(this)}>
-           <input id="search" type="text" placeholder="Find Alerts" />
-           <span><img alt="search-icon" src="../images/search-icon-01.svg" /></span>
-         </form>
+      <div className="row">
+        <div className="col-md-10 col-md-offset-1">
+            <div className="row searchBar">
+              <input className="col-md-11 search" type="text" placeholder="Find Alerts" />
+              <img className="col-md-1"alt="search-icon" rel="../images/search-icon-01.svg"/>
+             </div>
+         </div>
       </div>
     )
   }

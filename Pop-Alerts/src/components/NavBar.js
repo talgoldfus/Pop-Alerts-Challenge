@@ -2,7 +2,7 @@ import React from 'react';
 
 const NavBar = ()=>{
     return (
-      <div className="navBar">
+      <div className="row navBar">
           <h4>POP ALERTS</h4>
           <button className="menu">Menu</button>
       </div>

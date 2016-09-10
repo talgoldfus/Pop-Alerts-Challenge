@@ -4,9 +4,11 @@ import AlertRowsContainer from '../containers/AlertRowsContainer'
 
 const AlertsTable = ()=>{
     return (
-      <div className="alertsTable">
-          <AlertSelectorContainer />
-          <AlertRowsContainer />
+      <div className="row">
+          <div className="col-md-10 col-md-offset-1 mainAlertContainer">
+            <AlertSelectorContainer />
+            <AlertRowsContainer />
+          </div>
       </div>
     )
 }

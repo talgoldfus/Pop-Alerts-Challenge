@@ -7,11 +7,14 @@ import '../index.css'
 
 const App = ()=>{
     return (
-      <div className="main">
-          <NavBar />
-          <SearchBar />
-          <AlertsTable />
-      </div>
+    <div className="container">
+        <div className="main">
+            <NavBar />
+            <SearchBar />
+            <AlertsTable />
+        </div>
+    </div>
+
     )
 }
 
