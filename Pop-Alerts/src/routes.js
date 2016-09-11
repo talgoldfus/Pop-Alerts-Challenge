@@ -7,9 +7,7 @@ import Test from './components/Test'
 
 export default (
 <div>
-    <Route path="/" component={App}>
-      <Route path="menu" component={Menu} />
-    </Route>
+    <Route path="/" component={App} />
     <Route path="/terms" component={Test} />
     <Route path="/policy" component={Test} />
     <Route path="/settings" component={Test} />

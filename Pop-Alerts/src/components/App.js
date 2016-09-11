@@ -9,15 +9,12 @@ class App extends Component{
 
   render(){
     return (
-      <div className="container">
-          <div className="main">
-              <NavBar />
-              {this.props.children}
-              <SearchBar />
-              <AlertsTable />
-          </div>
-      </div>
-
+        <div className="main">
+            <NavBar />
+            {this.props.children}
+            <SearchBar />
+            <AlertsTable />
+        </div>
       )
   }
   }
