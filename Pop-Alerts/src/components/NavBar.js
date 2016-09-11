@@ -5,7 +5,7 @@ const NavBar = ()=>{
     return (
       <div className="row navBar">
         <div className="col-xs-10">
-          <h4>POP ALERTS</h4>
+          <h1>POP ALERTS</h1>
         </div>
         <div className="col-xs-2">
           <Link to="/">

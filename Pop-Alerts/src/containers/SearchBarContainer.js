@@ -17,13 +17,12 @@ class SearchBar extends Component {
     render(){
     return (
         <div className="row">
-          <div className="col-xs-offset-1 col-xs-10 ">
-            <div className="row searchBar">
-              <form className="search" onSubmit={ event =>this.handleSubmit(event)}>
-                <input ref='search' type="text" placeholder="Find Alerts" />
+              <form
+              className="col-xs-offset-1 col-xs-10 searchBar"
+              onSubmit={ event =>this.handleSubmit(event)}>
+                <input id="search"  ref='search' type="text" placeholder="Find Alerts" />
+                <img id="searchIcon" src={require('../images/search-icon-01.svg')} alt="searchIcon"/>
               </form>
-            </div>
-           </div>
          </div>
     )
   }
