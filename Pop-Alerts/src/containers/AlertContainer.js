@@ -25,10 +25,10 @@ class Alert extends Component {
       if (!this.state.edit){
          alert =
         (<div>
-          <div className="col-md-11 col-sm-10 col-xs-9">
+          <div className="col-md-11 col-sm-10 col-xs-8">
             <p>{this.props.name}</p>
           </div>
-          <div className="col-md-1 col-sm-2 col-xs-3" >
+          <div className="col-md-1 col-sm-2 col-xs-4" >
             <button onClick={()=>this.handleClick()} className="btn edit">EDIT</button>
           </div>
         </div>)

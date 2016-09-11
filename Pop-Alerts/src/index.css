@@ -1,10 +1,11 @@
-@import '.assets/fonts/fonts.css';
-@import '.assets/bootstrap/bootstrap-theme.css';
-@import '.assets/bootstrap/bootstrap.css';
+@import './assets/fonts/fonts.css';
+@import './assets/bootstrap/bootstrap-theme.css';
+@import './assets/bootstrap/bootstrap.css';
 
 body {
   width: 100%;
-  font-family: sans-serif;
+
+  font-family: 'walsheimregular';
   background-color: #EBECEE;
 }
 
@@ -12,19 +13,17 @@ body {
 .navBar{
   width: 100% auto;
   color: white;
-  font-size: 1em;
   text-align: center;
   background-color: black;
 }
 
-.navBar> .headline {
-  margin-left: 1em;
+.navBar h1 {
 }
 
 #menuIcon{
   max-height: 2em;
   margin-right: 4em;
-  margin-top: 1.5em;
+  margin-top: 2em;
 }
 
 .searchBar{
@@ -37,6 +36,7 @@ body {
 }
 
 .searchBar > #search{
+  font-family:serif;
   display: inline-block;
   width: 85%;
   font-size: 1.5em;
@@ -57,32 +57,35 @@ body {
   background-color: white;
 }
 
-.alertsSelector{
-  border: solid 0.5px #E1E1E1 ;
-  border-radius: 5px;
-  margin-top: 2em;
-  margin-bottom: 2em;
+.wrapper{
   text-align: center;
 }
 
-.alertsSelector> .selector{
+.btn-group> .selector{
+  text-align: center;
+  border: solid 0.5px #E1E1E1 ;
+  border-radius: 5px;
   background-color: #F9F9F9;
   min-width: 9em;
+  margin-top: 2em;
+  margin-bottom: 2em;
 }
 
-.alertsSelector> .btn-pressed{
+.btn-group> .btn-pressed{
   color: #D8D8D8;
   background-color: white;
 
 }
 
 .alert{
+  font-family:serif;
   font-size: 1.2em;
   border: solid 0.5px #E1E1E1 ;
 
 }
 
 .edit{
+  font-family:sans-serif;
   margin-top: 1em;
   font-size: 0.7em;
   border-radius: 5em;

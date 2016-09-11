@@ -4,10 +4,17 @@ import changeFilter from '../actions/changeFilter'
 import classNames from 'classnames'
 
 class AlertSelector extends Component {
+
   constructor(props){
     super(props)
     this.state ={clicked: false}
     this.handleClick.bind(this)
+  }
+
+  componentWillReceiveProps(nextProps){
+    if (nextProps.currentFilter.filter === "SEARCH"){
+      this.setState({clicked: false})
+    }
   }
 
   handleClick(event,filter,pressed){
@@ -31,8 +38,8 @@ class AlertSelector extends Component {
 
     return (
       <div className="row">
-        <div className="col-xs-4 col-xs-offset-4" >
-        <div className="alertsSelector btn-group">
+      <div className="wrapper col-xs-12">
+        <div className="btn-group ">
             <button
               className={popularBtnClass}
               type="button"
@@ -46,11 +53,15 @@ class AlertSelector extends Component {
               Your Alerts
             </button>
           </div>
-        </div>
+         </div>
       </div>
     )
   }
 }
 
-const AlertSelectorContainer = connect(null,{changeFilter})(AlertSelector)
+const mapStateToProps = (state) => {
+  return {currentFilter: state.filter}
+}
+
+const AlertSelectorContainer = connect(mapStateToProps,{changeFilter})(AlertSelector)
 export default AlertSelectorContainer
