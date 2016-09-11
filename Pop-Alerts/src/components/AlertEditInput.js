@@ -19,15 +19,19 @@ class AlertEditInput extends Component {
     this.setState({ text: event.target.value })
     }
 
+  handleBlur(event){
+      this.props.save(event.target.value.trim())
+    }
+
     render(){
       return (
-        <div>
+        <div className="col-md-12 alert">
             <input
-            className="col-md-12 text"
             type="text"
             value={this.state.text}
             onChange={this.handleChange.bind(this)}
             onKeyDown={this.handleSubmit.bind(this)}
+            onBlur={this.handleBlur.bind(this)}
             autoFocus="true"
             />
         </div>

@@ -3,8 +3,7 @@
 @import './bootstrap/bootstrap.css';
 
 body {
-  margin: 0;
-  padding: 0;
+  width: 100%;
   font-family: sans-serif;
   background-color: #EBECEE;
 }
@@ -18,24 +17,19 @@ body {
   font-family: "walsheimregular";
 
 }
-.navBar> .menu {
-  display: inline-block;
-  float: right;
+
+#menuIcon {
+  max-height: 1.5em;
   margin-right: 2em;
-  margin-top: 2em;
+  margin-top: 1.5em;
 }
 
-.navBar> h4{
-  display: inline-block;
-}
 
 .mainAlertContainer{
   margin-top: 2em;
   margin-bottom: 2em;
-
   border: solid 1px #E1E1E1;
   background-color: white;
-  display: inline-block;
   font-family: "walsheimregular";
 }
 
@@ -46,9 +40,7 @@ body {
 }
 
 .searchBar > .search{
-  margin: auto;
-  width: 90%;
-  font-size: 2em;
+
 }
 
 .alertsSelector{
@@ -56,13 +48,22 @@ body {
   border-radius: 5px;
   margin-top: 2em;
   margin-bottom: 2em;
-  padding: 0,0.5em,0,0.5em;
   text-align: center;
+}
+
+.alertsSelector> .selector{
+  background-color: #F9F9F9;
+  min-width: 9em;
+}
+
+.alertsSelector> .btn-pressed{
+  color: #D8D8D8;
+  background-color: white;
+
 }
 
 .alert{
   border: solid 0.5px #E1E1E1 ;
-  border-spacing: inherit;
   padding-top: 0.5em;
   padding-bottom: 0.5em;
 }
@@ -71,4 +72,7 @@ body {
   margin-top: 1em;
   font-size: 0.7em;
   border-radius: 5em;
+}
+.edit:hover{
+  background-color: #FEE68D;
 }

@@ -4,7 +4,7 @@ import App from './components/App'
 
 
 export default (
-  <div>
+<div>
     <Route path="/" component={App} />
 </div>
 )

@@ -5,7 +5,7 @@ import AlertRowsContainer from '../containers/AlertRowsContainer'
 const AlertsTable = ()=>{
     return (
       <div className="row">
-          <div className="col-md-10 col-md-offset-1 mainAlertContainer">
+          <div className="col-xs-10 col-xs-offset-1 mainAlertContainer">
             <AlertSelectorContainer />
             <AlertRowsContainer />
           </div>

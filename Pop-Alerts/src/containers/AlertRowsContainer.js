@@ -10,8 +10,8 @@ class AlertRows extends Component {
       })
 
     return (
-      <div className="alertsTable">
-            {alerts}
+      <div>
+       {alerts}
       </div>
     )
   }
