@@ -1,6 +1,6 @@
-@import './fonts/fonts.css';
-@import './bootstrap/bootstrap-theme.css';
-@import './bootstrap/bootstrap.css';
+@import '.assets/fonts/fonts.css';
+@import '.assets/bootstrap/bootstrap-theme.css';
+@import '.assets/bootstrap/bootstrap.css';
 
 body {
   width: 100%;

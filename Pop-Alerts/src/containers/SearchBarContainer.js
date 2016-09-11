@@ -21,7 +21,7 @@ class SearchBar extends Component {
               className="col-xs-offset-1 col-xs-10 searchBar"
               onSubmit={ event =>this.handleSubmit(event)}>
                 <input id="search"  ref='search' type="text" placeholder="Find Alerts" />
-                <img id="searchIcon" src={require('../images/search-icon-01.svg')} alt="searchIcon"/>
+                <img id="searchIcon" src={require('..assets/images/search-icon-01.svg')} alt="searchIcon"/>
               </form>
          </div>
     )

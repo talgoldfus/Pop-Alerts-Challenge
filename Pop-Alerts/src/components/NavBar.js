@@ -9,7 +9,7 @@ const NavBar = ()=>{
         </div>
         <div className="col-xs-2">
           <Link to="/">
-            <img id="menuIcon" src={require('../images/menu-icon-01.png')} alt="menuIcon"/>
+            <img id="menuIcon" src={require('..assets/images/menu-icon-01.png')} alt="menuIcon"/>
           </Link>
         </div>
       </div>
