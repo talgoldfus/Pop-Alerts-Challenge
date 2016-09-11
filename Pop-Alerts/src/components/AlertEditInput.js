@@ -25,7 +25,7 @@ class AlertEditInput extends Component {
 
     render(){
       return (
-        <div className="col-md-12 alert">
+        <div className="col-md-12 editAlert">
             <input
             type="text"
             value={this.state.text}

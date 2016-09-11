@@ -4,11 +4,9 @@
 
 body {
   width: 100%;
-
   font-family: 'walsheimregular';
   background-color: #EBECEE;
 }
-
 
 .navBar{
   width: 100% auto;
@@ -17,14 +15,29 @@ body {
   background-color: black;
 }
 
-.navBar h1 {
-}
-
 #menuIcon{
   max-height: 2em;
   margin-right: 4em;
   margin-top: 2em;
 }
+
+.menu{
+  z-index: 2;
+  top: -20;
+  left: 1.87em;
+  position:absolute;
+  margin-top: 2em;
+  color: white;
+}
+.menuBtn{
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  text-align: left;
+  color: white;
+  text-decoration: none;
+  background-color: black;
+}
+
 
 .searchBar{
   background-color: white;
@@ -62,6 +75,7 @@ body {
 }
 
 .btn-group> .selector{
+  font-family:serif;
   text-align: center;
   border: solid 0.5px #E1E1E1 ;
   border-radius: 5px;
@@ -77,19 +91,28 @@ body {
 
 }
 
-.alert{
+.alert , .editAlert{
   font-family:serif;
-  font-size: 1.2em;
+  font-size: 1.5em;
   border: solid 0.5px #E1E1E1 ;
+}
+.editAlert{
+  border-style: none;
+}
 
+.editAlert> input{
+  width: 70%;
 }
 
 .edit{
   font-family:sans-serif;
-  margin-top: 1em;
-  font-size: 0.7em;
+  margin-top: 2em;
+  font-size: 0.5em;
   border-radius: 5em;
 }
-.edit:hover{
+
+.edit:hover ,.menuBtn:hover{
+  color: black;
   background-color: #FEE68D;
+  text-decoration: none;
 }
