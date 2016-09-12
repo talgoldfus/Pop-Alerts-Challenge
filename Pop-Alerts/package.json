@@ -2,6 +2,7 @@
   "name": "Pop-Alerts",
   "version": "0.0.1",
   "private": true,
+  "homepage": "http://talgoldfus.github.io/popAlert",
   "devDependencies": {
     "react-scripts": "0.4.1"
   },
