@@ -29,3 +29,7 @@ I decided to try and build a very dynamic solution of the comps using React / Re
 ### 4) Routes were added to the application using the React-Router library to allow multiple page views for future Restful page layout and addition of more dynamic pages of this app.
 ### 5) Dropdown menu that actually links to different routes and will only show links to the routes that the user is not currently browsing in (If the user is browsing at /terms term wont be included and will be replace by Homepage instead).
 ### 6) A hyper link was added to the navigation bar headline so the user can always return to the homepage without the need to click the menu.
+
+##Live Demo
+
+https://pop-alert.herokuapp.com/
