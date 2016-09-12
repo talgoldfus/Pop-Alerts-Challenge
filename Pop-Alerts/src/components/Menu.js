@@ -1,27 +1,43 @@
-import React from 'react';
-import {Link} from 'react-router'
+import React,{Component}from 'react';
+import {Link ,withRouter } from 'react-router'
 
 
-const Menu = (props)=>{
-    const classes = "menuBtn col-md-8"
+class Menu extends Component{
+
+render(){
+    var menueLinks = [
+      {path:'/',text:'Home'},
+      {path:'/policy',text:'Privacy Policy'},
+      {path:'/terms', text:'Terms of Use'},
+      {path:'/settings', text:'Settings'},
+      {path:'/logout', text:'Logout'}
+    ]
+
+    const links= menueLinks.map((link)=>{
+      if (this.props.location.pathname != link.path){
+        return  (
+          <div key={link.text} className="row" >
+            <Link
+              to={link.path}
+              className="menuBtn col-md-10"
+              onClick={this.props.display}>
+              {link.text}
+            </Link>
+          </div>
+        )
+      }
+    })
+
     return (
-    <div className="row" >
-      <div className="col-md-offset-9 col-md-2 menu">
-          <div className="row" >
-              <Link to="/policy" className={classes} onClick={props.display}>Privacy Policy</Link>
-  </div>
-  <div className="row" >
-              <Link to="/terms" className={classes} onClick={props.display}>Terms of Use</Link>
-  </div>
-  <div className="row" >
-            <Link to="/settings" className={classes} onClick={props.display}>Settings</Link>
-  </div>
-  <div className="row" >
-              <Link to="/logout" className={classes} onClick={props.display}>Logout</Link>
+      <div className="row" >
+        <div className="col-md-offset-9 col-md-2 menu">
+          <div className="menuWrapper">
+            {links}
+          </div>
         </div>
       </div>
-    </div>
     )
+  }
 }
 
-export default Menu
+export default withRouter(Menu)
