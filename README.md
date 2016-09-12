@@ -2,9 +2,9 @@
 
 The objective of the test is to create the HTML/CSS/JS needed to show the page as represented in the 2 following design comps:
 
-![Overview](https://github.com/talgoldfus/Pop-Alerts-Challenge/blob/master/challengeCopms/popalerts_0014_Dropdown.jpg)
+![Overview](https://github.com/talgoldfus/Pop-Alerts-Challenge/blob/master/challengeCopms/popalerts_0014_Dropdown.png)
 
-![Overview](https://github.com/talgoldfus/Pop-Alerts-Challenge/blob/master/challengeCopms/popalerts_0011_Selection.jpg)
+![Overview](https://github.com/talgoldfus/Pop-Alerts-Challenge/blob/master/challengeCopms/popalerts_0011_Selection.png)
 
 
 ##Your work will be evaluated on the following criteria:
